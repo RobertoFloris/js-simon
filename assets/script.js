@@ -16,17 +16,17 @@ n3.innerText = arrayRandom[2]
 n4.innerText = arrayRandom[3]
 n5.innerText = arrayRandom[4]
 
-const countReverse = document.querySelector('.countReverse');
+const countdown = document.querySelector('.countdown');
 let seconds = 10;
 
-countReverse.innerHTML = seconds--;
+countdown.innerHTML = seconds--;
 
 const intervalId = setInterval( () =>{
 
-  countReverse.innerHTML = seconds;
+  countdown.innerHTML = seconds;
   if(seconds === 0){
     clearInterval(intervalId);
-    countReverse.innerHTML = 'Il tempo è terminato!';
+    countdown.innerHTML = 'Il tempo è terminato!';
   }
   seconds--;
 
