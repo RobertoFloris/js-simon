@@ -49,11 +49,11 @@ const intervalId = setInterval(() => {
     timeExpired.classList.remove("d-none");
 
     //gli input sostituiscono il numero dell'array random in modo tale da non rendere possibile imbrogliare guardando con l'ispector gli elementi nascosti
-    n1.innerHTML = `<input type="number" min="1" max="50" class="n1" required>`;
-    n2.innerHTML = `<input type="number" min="1" max="50" class="n2" required>`;
-    n3.innerHTML = `<input type="number" min="1" max="50" class="n3" required>`;
-    n4.innerHTML = `<input type="number" min="1" max="50" class="n4" required>`;
-    n5.innerHTML = `<input type="number" min="1" max="50" class="n5" required>`;
+    n1.innerHTML = `<input type="number" min="1" max="50" class="n1" required style="width: 50px">`;
+    n2.innerHTML = `<input type="number" min="1" max="50" class="n2" required style="width: 50px;">`;
+    n3.innerHTML = `<input type="number" min="1" max="50" class="n3" required style="width: 50px;">`;
+    n4.innerHTML = `<input type="number" min="1" max="50" class="n4" required style="width: 50px;">`;
+    n5.innerHTML = `<input type="number" min="1" max="50" class="n5" required style="width: 50px;">`;
 
     //appare il pulsante invia
     const send = document.querySelector('.send');
